@@ -1,0 +1,59 @@
+{
+  "scan_metadata": {
+    "scan_id": "sud0recon_20250701_205311",
+    "timestamp": "2025-07-01T20:53:11.376450",
+    "scanner_version": "1.0.0",
+    "targets_count": 3,
+    "results_count": 3
+  },
+  "targets": [
+    "httpbin.org",
+    "example.com",
+    "github.com"
+  ],
+  "results": [
+    {
+      "target": "httpbin.org",
+      "status": "up",
+      "timestamp": "2025-07-01T20:53:11.356967",
+      "response_time_ms": 90.37,
+      "scan_type": "basic_connectivity",
+      "ports": [
+        80,
+        443,
+        22
+      ],
+      "vulnerabilities": [
+        "Example vulnerability (demo)"
+      ]
+    },
+    {
+      "target": "example.com",
+      "status": "up",
+      "timestamp": "2025-07-01T20:53:11.357038",
+      "response_time_ms": 36.28,
+      "scan_type": "basic_connectivity",
+      "ports": [
+        80,
+        443,
+        22
+      ],
+      "subdomains": [
+        "www.example.com",
+        "api.example.com"
+      ],
+      "vulnerabilities": [
+        "Example vulnerability (demo)"
+      ]
+    },
+    {
+      "target": "github.com",
+      "status": "up",
+      "timestamp": "2025-07-01T20:53:11.357063",
+      "response_time_ms": 54.68,
+      "scan_type": "basic_connectivity"
+    }
+  ],
+  "generated_by": "Sud0Recon v1.0.0",
+  "contact": "sud0x.dev@proton.me"
+}

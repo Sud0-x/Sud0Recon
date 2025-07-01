@@ -1,0 +1,254 @@
+{
+  "scan_metadata": {
+    "scan_id": "sud0recon_20250701_214641",
+    "timestamp": "2025-07-01T21:46:41.258599",
+    "scanner_version": "1.0.0",
+    "targets_count": 3,
+    "results_count": 3
+  },
+  "targets": [
+    "httpbin.org",
+    "jsonplaceholder.typicode.com",
+    "httpstat.us"
+  ],
+  "results": [
+    {
+      "target": "jsonplaceholder.typicode.com",
+      "timestamp": "2025-07-01T21:46:32.885850",
+      "scan_type": "fast",
+      "vulnerabilities": [
+        {
+          "type": "Security Headers",
+          "severity": "HIGH",
+          "title": "Missing X-Frame-Options Header",
+          "description": "Critical security header missing: X-Frame-Options",
+          "protocol": "HTTP",
+          "recommendation": "Add X-Frame-Options header to prevent security attacks"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "CRITICAL",
+          "title": "Missing Content-Security-Policy Header",
+          "description": "Critical security header missing: Content-Security-Policy",
+          "protocol": "HTTP",
+          "recommendation": "Add Content-Security-Policy header to prevent security attacks"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "HIGH",
+          "title": "Missing Strict-Transport-Security Header",
+          "description": "Critical security header missing: Strict-Transport-Security",
+          "protocol": "HTTP",
+          "recommendation": "Add Strict-Transport-Security header to prevent security attacks"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-Content-Type-Options Header",
+          "description": "Critical security header missing: X-Content-Type-Options",
+          "protocol": "HTTP",
+          "recommendation": "Add X-Content-Type-Options header to prevent security attacks"
+        }
+      ],
+      "vulnerability_count": 4,
+      "security_headers": {
+        "X-Frame-Options": "MISSING",
+        "Content-Security-Policy": "MISSING",
+        "Strict-Transport-Security": "MISSING",
+        "X-Content-Type-Options": "MISSING"
+      },
+      "ssl_issues": [],
+      "cms_detection": {},
+      "subdomains": [],
+      "ports": [
+        80,
+        443,
+        8080,
+        8443
+      ],
+      "port_details": {
+        "open": [
+          80,
+          443,
+          8080,
+          8443
+        ],
+        "closed": [
+          21,
+          22,
+          23,
+          25,
+          53,
+          110,
+          143,
+          993,
+          995
+        ],
+        "filtered": []
+      },
+      "status": "vulnerable"
+    },
+    {
+      "target": "httpstat.us",
+      "timestamp": "2025-07-01T21:46:34.314849",
+      "scan_type": "fast",
+      "vulnerabilities": [
+        {
+          "type": "Security Headers",
+          "severity": "HIGH",
+          "title": "Missing X-Frame-Options Header",
+          "description": "Critical security header missing: X-Frame-Options",
+          "protocol": "HTTP",
+          "recommendation": "Add X-Frame-Options header to prevent security attacks"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "CRITICAL",
+          "title": "Missing Content-Security-Policy Header",
+          "description": "Critical security header missing: Content-Security-Policy",
+          "protocol": "HTTP",
+          "recommendation": "Add Content-Security-Policy header to prevent security attacks"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "HIGH",
+          "title": "Missing Strict-Transport-Security Header",
+          "description": "Critical security header missing: Strict-Transport-Security",
+          "protocol": "HTTP",
+          "recommendation": "Add Strict-Transport-Security header to prevent security attacks"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-Content-Type-Options Header",
+          "description": "Critical security header missing: X-Content-Type-Options",
+          "protocol": "HTTP",
+          "recommendation": "Add X-Content-Type-Options header to prevent security attacks"
+        },
+        {
+          "type": "Access Control",
+          "severity": "MEDIUM",
+          "title": "Admin Interface Accessible",
+          "description": "Admin interface found at /admin (Status: 403)",
+          "path": "/admin",
+          "recommendation": "Restrict access to admin interfaces"
+        }
+      ],
+      "vulnerability_count": 5,
+      "security_headers": {
+        "X-Frame-Options": "MISSING",
+        "Content-Security-Policy": "MISSING",
+        "Strict-Transport-Security": "MISSING",
+        "X-Content-Type-Options": "MISSING"
+      },
+      "ssl_issues": [],
+      "cms_detection": {},
+      "subdomains": [
+        "www.httpstat.us"
+      ],
+      "ports": [
+        80,
+        443
+      ],
+      "port_details": {
+        "open": [
+          80,
+          443
+        ],
+        "closed": [
+          21,
+          22,
+          23,
+          25,
+          53,
+          110,
+          143,
+          993,
+          995,
+          8080,
+          8443
+        ],
+        "filtered": []
+      },
+      "status": "vulnerable"
+    },
+    {
+      "target": "httpbin.org",
+      "timestamp": "2025-07-01T21:46:39.197602",
+      "scan_type": "fast",
+      "vulnerabilities": [
+        {
+          "type": "Security Headers",
+          "severity": "HIGH",
+          "title": "Missing X-Frame-Options Header",
+          "description": "Critical security header missing: X-Frame-Options",
+          "protocol": "HTTP",
+          "recommendation": "Add X-Frame-Options header to prevent security attacks"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "CRITICAL",
+          "title": "Missing Content-Security-Policy Header",
+          "description": "Critical security header missing: Content-Security-Policy",
+          "protocol": "HTTP",
+          "recommendation": "Add Content-Security-Policy header to prevent security attacks"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "HIGH",
+          "title": "Missing Strict-Transport-Security Header",
+          "description": "Critical security header missing: Strict-Transport-Security",
+          "protocol": "HTTP",
+          "recommendation": "Add Strict-Transport-Security header to prevent security attacks"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-Content-Type-Options Header",
+          "description": "Critical security header missing: X-Content-Type-Options",
+          "protocol": "HTTP",
+          "recommendation": "Add X-Content-Type-Options header to prevent security attacks"
+        }
+      ],
+      "vulnerability_count": 4,
+      "security_headers": {
+        "X-Frame-Options": "MISSING",
+        "Content-Security-Policy": "MISSING",
+        "Strict-Transport-Security": "MISSING",
+        "X-Content-Type-Options": "MISSING"
+      },
+      "ssl_issues": [],
+      "cms_detection": {},
+      "subdomains": [
+        "www.httpbin.org"
+      ],
+      "ports": [
+        80,
+        443
+      ],
+      "port_details": {
+        "open": [
+          80,
+          443
+        ],
+        "closed": [
+          21,
+          22,
+          23,
+          25,
+          53,
+          110,
+          143,
+          993,
+          995,
+          8080,
+          8443
+        ],
+        "filtered": []
+      },
+      "status": "vulnerable"
+    }
+  ],
+  "generated_by": "Sud0Recon v1.0.0",
+  "contact": "sud0x.dev@proton.me"
+}

@@ -1,0 +1,28 @@
+{
+  "scan_metadata": {
+    "scan_id": "sud0recon_20250701_211657",
+    "timestamp": "2025-07-01T21:16:57.579828",
+    "scanner_version": "1.0.0",
+    "targets_count": 1,
+    "results_count": 1
+  },
+  "targets": [
+    "example.com"
+  ],
+  "results": [
+    {
+      "target": "example.com",
+      "status": "error",
+      "timestamp": "2025-07-01T21:16:54.549104",
+      "scan_type": "comprehensive",
+      "vulnerabilities": [],
+      "vulnerability_count": 0,
+      "security_headers": {},
+      "ssl_issues": [],
+      "cms_detection": {},
+      "error": "'NoneType' object has no attribute 'get'"
+    }
+  ],
+  "generated_by": "Sud0Recon v1.0.0",
+  "contact": "sud0x.dev@proton.me"
+}

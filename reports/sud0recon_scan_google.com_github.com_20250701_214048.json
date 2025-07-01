@@ -1,0 +1,323 @@
+{
+  "scan_metadata": {
+    "scan_id": "sud0recon_20250701_214048",
+    "timestamp": "2025-07-01T21:40:48.460243",
+    "scanner_version": "1.0.0",
+    "targets_count": 2,
+    "results_count": 2
+  },
+  "targets": [
+    "google.com",
+    "github.com"
+  ],
+  "results": [
+    {
+      "target": "google.com",
+      "status": "vulnerable",
+      "timestamp": "2025-07-01T21:40:31.357084",
+      "scan_type": "comprehensive",
+      "vulnerabilities": [
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-Content-Type-Options Header",
+          "description": "Missing security header: X-Content-Type-Options (MIME type sniffing protection)",
+          "protocol": "HTTP",
+          "recommendation": "Add X-Content-Type-Options header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing Strict-Transport-Security Header",
+          "description": "Missing security header: Strict-Transport-Security (HTTPS enforcement)",
+          "protocol": "HTTP",
+          "recommendation": "Add Strict-Transport-Security header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "HIGH",
+          "title": "Missing Content-Security-Policy Header",
+          "description": "Missing security header: Content-Security-Policy (Content injection protection)",
+          "protocol": "HTTP",
+          "recommendation": "Add Content-Security-Policy header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-Permitted-Cross-Domain-Policies Header",
+          "description": "Missing security header: X-Permitted-Cross-Domain-Policies (Cross-domain policy control)",
+          "protocol": "HTTP",
+          "recommendation": "Add X-Permitted-Cross-Domain-Policies header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing Referrer-Policy Header",
+          "description": "Missing security header: Referrer-Policy (Referrer information control)",
+          "protocol": "HTTP",
+          "recommendation": "Add Referrer-Policy header to improve security"
+        },
+        {
+          "type": "SSL/TLS",
+          "severity": "HIGH",
+          "title": "Weak SSL Protocol Supported",
+          "description": "Server supports weak PROTOCOL_TLSv1 protocol",
+          "port": 443,
+          "cve": null,
+          "recommendation": "Disable weak SSL/TLS protocols and use TLS 1.2+ only"
+        },
+        {
+          "type": "Information Disclosure",
+          "severity": "LOW",
+          "title": "Robots.txt File Exposed",
+          "description": "robots.txt file reveals directory structure",
+          "path": "/robots.txt",
+          "recommendation": "Review robots.txt for sensitive path disclosure"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-Content-Type-Options Header",
+          "description": "Missing security header: X-Content-Type-Options (MIME type sniffing protection)",
+          "protocol": "HTTPS",
+          "recommendation": "Add X-Content-Type-Options header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing Strict-Transport-Security Header",
+          "description": "Missing security header: Strict-Transport-Security (HTTPS enforcement)",
+          "protocol": "HTTPS",
+          "recommendation": "Add Strict-Transport-Security header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "HIGH",
+          "title": "Missing Content-Security-Policy Header",
+          "description": "Missing security header: Content-Security-Policy (Content injection protection)",
+          "protocol": "HTTPS",
+          "recommendation": "Add Content-Security-Policy header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-Permitted-Cross-Domain-Policies Header",
+          "description": "Missing security header: X-Permitted-Cross-Domain-Policies (Cross-domain policy control)",
+          "protocol": "HTTPS",
+          "recommendation": "Add X-Permitted-Cross-Domain-Policies header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing Referrer-Policy Header",
+          "description": "Missing security header: Referrer-Policy (Referrer information control)",
+          "protocol": "HTTPS",
+          "recommendation": "Add Referrer-Policy header to improve security"
+        },
+        {
+          "type": "SSL/TLS",
+          "severity": "HIGH",
+          "title": "Weak SSL Protocol Supported",
+          "description": "Server supports weak PROTOCOL_TLSv1_1 protocol",
+          "port": 443,
+          "cve": null,
+          "recommendation": "Disable weak SSL/TLS protocols and use TLS 1.2+ only"
+        },
+        {
+          "type": "Cross-Site Scripting (XSS)",
+          "severity": "HIGH",
+          "title": "XSS Vulnerability Detected",
+          "description": "XSS vulnerability found in parameter: q",
+          "parameter": "q",
+          "payload": "javascript:alert('XSS')",
+          "cve": "CWE-79",
+          "recommendation": "Implement proper input validation and output encoding"
+        }
+      ],
+      "vulnerability_count": 14,
+      "security_headers": {
+        "X-Frame-Options": "PRESENT",
+        "X-XSS-Protection": "PRESENT",
+        "X-Content-Type-Options": "MISSING",
+        "Strict-Transport-Security": "MISSING",
+        "Content-Security-Policy": "MISSING",
+        "X-Permitted-Cross-Domain-Policies": "MISSING",
+        "Referrer-Policy": "MISSING"
+      },
+      "ssl_issues": [
+        "Weak protocol: PROTOCOL_TLSv1",
+        "Weak protocol: PROTOCOL_TLSv1_1"
+      ],
+      "cms_detection": {},
+      "subdomains": [
+        "www.google.com",
+        "mail.google.com"
+      ],
+      "ports": [
+        80,
+        443
+      ],
+      "port_details": {
+        "open": [
+          80,
+          443
+        ],
+        "closed": [
+          21,
+          22,
+          23,
+          25,
+          53,
+          110,
+          143,
+          993,
+          995,
+          8080,
+          8443
+        ],
+        "filtered": []
+      }
+    },
+    {
+      "target": "github.com",
+      "status": "vulnerable",
+      "timestamp": "2025-07-01T21:40:31.356965",
+      "scan_type": "comprehensive",
+      "vulnerabilities": [
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-Frame-Options Header",
+          "description": "Missing security header: X-Frame-Options (Clickjacking protection)",
+          "protocol": "HTTP",
+          "recommendation": "Add X-Frame-Options header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-XSS-Protection Header",
+          "description": "Missing security header: X-XSS-Protection (XSS protection)",
+          "protocol": "HTTP",
+          "recommendation": "Add X-XSS-Protection header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-Content-Type-Options Header",
+          "description": "Missing security header: X-Content-Type-Options (MIME type sniffing protection)",
+          "protocol": "HTTP",
+          "recommendation": "Add X-Content-Type-Options header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing Strict-Transport-Security Header",
+          "description": "Missing security header: Strict-Transport-Security (HTTPS enforcement)",
+          "protocol": "HTTP",
+          "recommendation": "Add Strict-Transport-Security header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "HIGH",
+          "title": "Missing Content-Security-Policy Header",
+          "description": "Missing security header: Content-Security-Policy (Content injection protection)",
+          "protocol": "HTTP",
+          "recommendation": "Add Content-Security-Policy header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-Permitted-Cross-Domain-Policies Header",
+          "description": "Missing security header: X-Permitted-Cross-Domain-Policies (Cross-domain policy control)",
+          "protocol": "HTTP",
+          "recommendation": "Add X-Permitted-Cross-Domain-Policies header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing Referrer-Policy Header",
+          "description": "Missing security header: Referrer-Policy (Referrer information control)",
+          "protocol": "HTTP",
+          "recommendation": "Add Referrer-Policy header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-Permitted-Cross-Domain-Policies Header",
+          "description": "Missing security header: X-Permitted-Cross-Domain-Policies (Cross-domain policy control)",
+          "protocol": "HTTPS",
+          "recommendation": "Add X-Permitted-Cross-Domain-Policies header to improve security"
+        },
+        {
+          "type": "Information Disclosure",
+          "severity": "LOW",
+          "title": "Robots.txt File Exposed",
+          "description": "robots.txt file reveals directory structure",
+          "path": "/robots.txt",
+          "recommendation": "Review robots.txt for sensitive path disclosure"
+        },
+        {
+          "type": "Access Control",
+          "severity": "MEDIUM",
+          "title": "Admin Panel Accessible",
+          "description": "Admin panel found at /administrator",
+          "path": "/administrator",
+          "status_code": 200,
+          "recommendation": "Secure admin panels with strong authentication and IP restrictions"
+        },
+        {
+          "type": "Open Port",
+          "severity": "MEDIUM",
+          "title": "SSH Service Exposed",
+          "description": "SSH service running on port 22",
+          "port": 22,
+          "service": "SSH",
+          "recommendation": "Secure SSH service or restrict access"
+        }
+      ],
+      "vulnerability_count": 11,
+      "security_headers": {
+        "X-Frame-Options": "PRESENT",
+        "X-XSS-Protection": "PRESENT",
+        "X-Content-Type-Options": "PRESENT",
+        "Strict-Transport-Security": "PRESENT",
+        "Content-Security-Policy": "PRESENT",
+        "X-Permitted-Cross-Domain-Policies": "MISSING",
+        "Referrer-Policy": "PRESENT"
+      },
+      "ssl_issues": [],
+      "cms_detection": {},
+      "subdomains": [
+        "www.github.com",
+        "api.github.com"
+      ],
+      "ports": [
+        22,
+        80,
+        443
+      ],
+      "port_details": {
+        "open": [
+          22,
+          80,
+          443
+        ],
+        "closed": [
+          21,
+          23,
+          25,
+          53,
+          110,
+          143,
+          993,
+          995,
+          8080,
+          8443
+        ],
+        "filtered": []
+      }
+    }
+  ],
+  "generated_by": "Sud0Recon v1.0.0",
+  "contact": "sud0x.dev@proton.me"
+}

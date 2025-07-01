@@ -1,0 +1,137 @@
+{
+  "scan_metadata": {
+    "scan_id": "sud0recon_20250701_232519",
+    "timestamp": "2025-07-01T23:25:19.064769",
+    "scanner_version": "1.0.0",
+    "targets_count": 1,
+    "results_count": 1
+  },
+  "targets": [
+    "test.com"
+  ],
+  "results": [
+    {
+      "target": "test.com",
+      "timestamp": "2025-07-01T23:25:17.006243",
+      "scan_type": "comprehensive",
+      "vulnerabilities": [
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-Frame-Options Header",
+          "description": "Missing security header: X-Frame-Options (Clickjacking protection)",
+          "protocol": "HTTP",
+          "recommendation": "Add X-Frame-Options header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-XSS-Protection Header",
+          "description": "Missing security header: X-XSS-Protection (XSS protection)",
+          "protocol": "HTTP",
+          "recommendation": "Add X-XSS-Protection header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-Content-Type-Options Header",
+          "description": "Missing security header: X-Content-Type-Options (MIME type sniffing protection)",
+          "protocol": "HTTP",
+          "recommendation": "Add X-Content-Type-Options header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing Strict-Transport-Security Header",
+          "description": "Missing security header: Strict-Transport-Security (HTTPS enforcement)",
+          "protocol": "HTTP",
+          "recommendation": "Add Strict-Transport-Security header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "HIGH",
+          "title": "Missing Content-Security-Policy Header",
+          "description": "Missing security header: Content-Security-Policy (Content injection protection)",
+          "protocol": "HTTP",
+          "recommendation": "Add Content-Security-Policy header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing X-Permitted-Cross-Domain-Policies Header",
+          "description": "Missing security header: X-Permitted-Cross-Domain-Policies (Cross-domain policy control)",
+          "protocol": "HTTP",
+          "recommendation": "Add X-Permitted-Cross-Domain-Policies header to improve security"
+        },
+        {
+          "type": "Security Headers",
+          "severity": "MEDIUM",
+          "title": "Missing Referrer-Policy Header",
+          "description": "Missing security header: Referrer-Policy (Referrer information control)",
+          "protocol": "HTTP",
+          "recommendation": "Add Referrer-Policy header to improve security"
+        },
+        {
+          "type": "SSL/TLS",
+          "severity": "HIGH",
+          "title": "Weak SSL Protocol Supported",
+          "description": "Server supports weak PROTOCOL_TLSv1_1 protocol",
+          "port": 443,
+          "cve": null,
+          "recommendation": "Disable weak SSL/TLS protocols and use TLS 1.2+ only"
+        },
+        {
+          "type": "SSL Certificate",
+          "severity": "HIGH",
+          "title": "Invalid SSL Certificate",
+          "description": "SSL certificate is invalid, self-signed, or untrusted",
+          "port": 443,
+          "recommendation": "Install a valid SSL certificate from a trusted CA"
+        }
+      ],
+      "vulnerability_count": 9,
+      "security_headers": {
+        "X-Frame-Options": "MISSING",
+        "X-XSS-Protection": "MISSING",
+        "X-Content-Type-Options": "MISSING",
+        "Strict-Transport-Security": "MISSING",
+        "Content-Security-Policy": "MISSING",
+        "X-Permitted-Cross-Domain-Policies": "MISSING",
+        "Referrer-Policy": "MISSING"
+      },
+      "ssl_issues": [
+        "Weak protocol: PROTOCOL_TLSv1_1",
+        "Invalid/Self-signed certificate"
+      ],
+      "cms_detection": {},
+      "subdomains": [],
+      "ports": [
+        80,
+        443
+      ],
+      "port_details": {
+        "open": [
+          80,
+          443
+        ],
+        "closed": [
+          21,
+          22,
+          23,
+          25,
+          53,
+          110,
+          143,
+          993,
+          995,
+          8080,
+          8443
+        ],
+        "filtered": []
+      },
+      "status": "vulnerable"
+    }
+  ],
+  "generated_by": "Sud0Recon v1.0.0",
+  "contact": "sud0x.dev@proton.me"
+}

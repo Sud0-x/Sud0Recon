@@ -1,0 +1,30 @@
+{
+  "scan_metadata": {
+    "scan_id": "sud0recon_20250701_210048",
+    "timestamp": "2025-07-01T21:00:48.431967",
+    "scanner_version": "1.0.0",
+    "targets_count": 1,
+    "results_count": 1
+  },
+  "targets": [
+    "httpbin.org"
+  ],
+  "results": [
+    {
+      "target": "httpbin.org",
+      "status": "up",
+      "timestamp": "2025-07-01T21:00:48.414843",
+      "response_time_ms": 102.55,
+      "scan_type": "basic_connectivity",
+      "subdomains": [
+        "www.httpbin.org",
+        "api.httpbin.org"
+      ],
+      "vulnerabilities": [
+        "Example vulnerability (demo)"
+      ]
+    }
+  ],
+  "generated_by": "Sud0Recon v1.0.0",
+  "contact": "sud0x.dev@proton.me"
+}

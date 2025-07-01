@@ -1,0 +1,21 @@
+{
+  "scan_metadata": {
+    "scan_id": "sud0recon_20250701_204619",
+    "timestamp": "2025-07-01T20:46:19.931922",
+    "scanner_version": "1.0.0",
+    "targets_count": 1,
+    "results_count": 1
+  },
+  "targets": [
+    "httpbin.org"
+  ],
+  "results": [
+    {
+      "target": "httpbin.org",
+      "status": "up",
+      "timestamp": "2025-07-01T20:46:19.928620"
+    }
+  ],
+  "generated_by": "Sud0Recon v1.0.0",
+  "contact": "sud0x.dev@proton.me"
+}

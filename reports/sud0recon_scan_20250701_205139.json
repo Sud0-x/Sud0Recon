@@ -1,0 +1,35 @@
+{
+  "scan_metadata": {
+    "scan_id": "sud0recon_20250701_205139",
+    "timestamp": "2025-07-01T20:51:39.253168",
+    "scanner_version": "1.0.0",
+    "targets_count": 1,
+    "results_count": 1
+  },
+  "targets": [
+    "tmv.edu.in"
+  ],
+  "results": [
+    {
+      "target": "tmv.edu.in",
+      "status": "up",
+      "timestamp": "2025-07-01T20:51:39.234964",
+      "response_time_ms": 49.47,
+      "scan_type": "basic_connectivity",
+      "ports": [
+        80,
+        443,
+        22
+      ],
+      "subdomains": [
+        "www.tmv.edu.in",
+        "api.tmv.edu.in"
+      ],
+      "vulnerabilities": [
+        "Example vulnerability (demo)"
+      ]
+    }
+  ],
+  "generated_by": "Sud0Recon v1.0.0",
+  "contact": "sud0x.dev@proton.me"
+}

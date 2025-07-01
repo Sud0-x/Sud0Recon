@@ -1,0 +1,32 @@
+{
+  "scan_metadata": {
+    "scan_id": "sud0recon_20250701_205202",
+    "timestamp": "2025-07-01T20:52:02.039709",
+    "scanner_version": "1.0.0",
+    "targets_count": 1,
+    "results_count": 1
+  },
+  "targets": [
+    "httpbin.org"
+  ],
+  "results": [
+    {
+      "target": "httpbin.org",
+      "status": "up",
+      "timestamp": "2025-07-01T20:52:02.034847",
+      "response_time_ms": 91.53,
+      "scan_type": "basic_connectivity",
+      "ports": [
+        80,
+        443,
+        22
+      ],
+      "subdomains": [
+        "www.httpbin.org",
+        "api.httpbin.org"
+      ]
+    }
+  ],
+  "generated_by": "Sud0Recon v1.0.0",
+  "contact": "sud0x.dev@proton.me"
+}

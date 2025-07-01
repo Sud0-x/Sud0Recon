@@ -1,0 +1,31 @@
+{
+  "scan_metadata": {
+    "scan_id": "sud0recon_20250701_205535",
+    "timestamp": "2025-07-01T20:55:35.659614",
+    "scanner_version": "1.0.0",
+    "targets_count": 1,
+    "results_count": 1
+  },
+  "targets": [
+    "github.com"
+  ],
+  "results": [
+    {
+      "target": "github.com",
+      "status": "up",
+      "timestamp": "2025-07-01T20:55:35.641740",
+      "response_time_ms": 179.53,
+      "scan_type": "basic_connectivity",
+      "ports": [
+        80,
+        443,
+        22
+      ],
+      "vulnerabilities": [
+        "Example vulnerability (demo)"
+      ]
+    }
+  ],
+  "generated_by": "Sud0Recon v1.0.0",
+  "contact": "sud0x.dev@proton.me"
+}

@@ -1,0 +1,48 @@
+{
+  "scan_metadata": {
+    "scan_id": "sud0recon_20250701_214112",
+    "timestamp": "2025-07-01T21:41:12.724795",
+    "scanner_version": "1.0.0",
+    "targets_count": 1,
+    "results_count": 1
+  },
+  "targets": [
+    "https://test-site.example.com"
+  ],
+  "results": [
+    {
+      "target": "https://test-site.example.com",
+      "status": "up",
+      "timestamp": "2025-07-01T21:41:11.072218",
+      "scan_type": "comprehensive",
+      "vulnerabilities": [],
+      "vulnerability_count": 0,
+      "security_headers": {},
+      "ssl_issues": [],
+      "cms_detection": {},
+      "subdomains": [],
+      "ports": [],
+      "port_details": {
+        "open": [],
+        "closed": [
+          21,
+          22,
+          23,
+          25,
+          53,
+          80,
+          110,
+          143,
+          443,
+          993,
+          995,
+          8080,
+          8443
+        ],
+        "filtered": []
+      }
+    }
+  ],
+  "generated_by": "Sud0Recon v1.0.0",
+  "contact": "sud0x.dev@proton.me"
+}

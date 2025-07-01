@@ -1,0 +1,22 @@
+{
+  "scan_metadata": {
+    "scan_id": "sud0recon_20250701_214422",
+    "timestamp": "2025-07-01T21:44:22.188025",
+    "scanner_version": "1.0.0",
+    "targets_count": 1,
+    "results_count": 1
+  },
+  "targets": [
+    "dnsleak.com"
+  ],
+  "results": [
+    {
+      "target": "dnsleak.com",
+      "status": "error",
+      "error": "'Scanner' object has no attribute '_run_port_scan'",
+      "timestamp": "2025-07-01T21:44:20.118767"
+    }
+  ],
+  "generated_by": "Sud0Recon v1.0.0",
+  "contact": "sud0x.dev@proton.me"
+}

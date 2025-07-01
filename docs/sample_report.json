@@ -1,0 +1,84 @@
+{
+  "scan_metadata": {
+    "scan_id": "sud0recon_20240701_143022",
+    "timestamp": "2024-07-01T14:30:22.123456Z",
+    "scanner_version": "1.0.0",
+    "scan_duration_seconds": 45.67,
+    "targets_count": 1,
+    "plugins_used": ["SubdomainEnum", "PortScanner", "BannerGrabber"]
+  },
+  "targets": [
+    {
+      "target": "example.com",
+      "target_type": "domain",
+      "scan_results": {
+        "subdomain_enumeration": {
+          "plugin": "SubdomainEnum",
+          "status": "completed",
+          "found_subdomains": [
+            "www.example.com",
+            "api.example.com",
+            "mail.example.com"
+          ],
+          "total_found": 3,
+          "scan_time": 12.34
+        },
+        "port_scanning": {
+          "plugin": "PortScanner",
+          "status": "completed",
+          "open_ports": [80, 443, 22],
+          "closed_ports": [21, 23, 25, 53, 110, 143, 993, 995, 8080, 8443],
+          "filtered_ports": [],
+          "total_scanned": 13,
+          "scan_time": 8.92
+        },
+        "banner_grabbing": {
+          "plugin": "BannerGrabber",
+          "status": "completed",
+          "banners": {
+            "80": "Apache/2.4.41 (Ubuntu)",
+            "443": "Apache/2.4.41 (Ubuntu) OpenSSL/1.1.1f",
+            "22": "SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5"
+          },
+          "scan_time": 3.21
+        },
+        "vulnerability_scan": {
+          "plugin": "VulnScanner",
+          "status": "completed",
+          "vulnerabilities": [
+            {
+              "severity": "medium",
+              "cve": "CVE-2023-1234",
+              "description": "Example vulnerability",
+              "port": 80,
+              "service": "Apache",
+              "recommendation": "Update to latest version"
+            }
+          ],
+          "total_vulnerabilities": 1,
+          "high_severity": 0,
+          "medium_severity": 1,
+          "low_severity": 0,
+          "scan_time": 21.20
+        }
+      },
+      "summary": {
+        "total_subdomains": 3,
+        "total_open_ports": 3,
+        "total_vulnerabilities": 1,
+        "risk_level": "medium"
+      }
+    }
+  ],
+  "scan_summary": {
+    "total_targets": 1,
+    "successful_scans": 1,
+    "failed_scans": 0,
+    "total_subdomains_found": 3,
+    "total_open_ports_found": 3,
+    "total_vulnerabilities_found": 1,
+    "overall_risk_level": "medium"
+  },
+  "generated_by": "Sud0Recon v1.0.0",
+  "contact": "sud0x.dev@proton.me"
+}
